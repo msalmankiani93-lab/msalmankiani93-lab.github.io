@@ -6,7 +6,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Muhammad Salman Kiani — Perovskite Photovoltaics &amp; Materials Physics</title>
 <meta content="Dr. Muhammad Salman Kiani — materials physicist working on flexible printed perovskite solar cells, SnO2 quantum-dot electron transport layers, and first-principles DFT of energy materials." name="description"/>
-<!-- Updated academic profile links, publication DOI hyperlinks, latest 2026 paper, and profile photograph. -->
+<!-- Updated academic profile links, publication DOI hyperlinks, and latest 2026 paper. -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
@@ -157,29 +157,9 @@
   .stat__l{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-light);margin-top:.5rem}
 
 
-  /* ── profile portrait + device visual ── */
+  /* ── device visual ── */
   .hero__visuals{
     display:grid;gap:1.45rem;align-items:center;justify-items:center;
-  }
-  .portrait-card{
-    position:relative;width:min(100%,300px);margin-inline:auto;padding:8px;
-    border:1px solid var(--line-dark);border-radius:24px;
-    background:rgba(255,255,255,.045);
-    box-shadow:0 24px 70px -34px rgba(0,0,0,.9);
-    overflow:hidden;
-  }
-  .portrait-card::before{
-    content:"";position:absolute;z-index:2;left:10%;right:10%;top:0;height:2px;
-    background:var(--spectral);border-radius:999px;
-  }
-  .portrait-card__img{
-    display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 21%;
-    border-radius:17px;background:#e9e4dd;
-  }
-  .portrait-card__cap{
-    padding:.72rem .35rem .18rem;text-align:center;
-    font-family:var(--f-mono);font-size:.62rem;letter-spacing:.11em;
-    text-transform:uppercase;color:var(--muted-light);
   }
 
   /* ── device-stack signature ── */
@@ -469,7 +449,7 @@
 </div>
 </div>
 <!-- SIGNATURE: flexible perovskite solar-cell device stack -->
-<div class="hero__visuals"><figure class="portrait-card"><img alt="Muhammad Salman Kiani" class="portrait-card__img" fetchpriority="high" height="1569" loading="eager" src="profile-photo.jpg" width="1002"/><figcaption class="portrait-card__cap">Muhammad Salman Kiani · Materials Physicist</figcaption></figure><div aria-label="Cross-section of a flexible perovskite solar cell: light in, current out" class="device">
+<div class="hero__visuals"><div aria-label="Cross-section of a flexible perovskite solar cell: light in, current out" class="device">
 <svg role="img" viewbox="0 0 320 300">
 <title>Flexible perovskite solar cell device stack</title>
 <!-- incoming photon path (dashed) -->
