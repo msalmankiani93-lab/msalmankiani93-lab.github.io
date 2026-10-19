@@ -117,6 +117,8 @@
     .research-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
     .research-card h3 { margin: 0 0 8px; color: var(--navy); font: 600 1.15rem/1.25 var(--display); }
     .research-card p { margin: 0; color: var(--muted); font-size: .88rem; }
+    .project-list { margin: 10px 0 0; padding-left: 20px; color: var(--muted); font-size: .88rem; }
+    .project-list li + li { margin-top: 10px; }
 
     .device-card { overflow: hidden; padding: 0; }
     .device-layout { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(235px, .75fr); }
@@ -246,6 +248,8 @@
         <a href="#device">Device sketch</a>
         <a href="#publications">Publications</a>
         <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#honours">Honours</a>
         <a href="#expertise">Expertise</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -558,6 +562,29 @@
         </div>
       </section>
 
+      <section class="section" id="projects">
+        <div class="section-head">
+          <span class="eyebrow">Research contributions</span>
+          <h2>Research Projects</h2>
+        </div>
+        <div class="research-grid">
+          <article class="paper-card research-card">
+            <h3>PhD Research Assistant</h3>
+            <ul class="project-list">
+              <li>Printed Perovskite Solar Cells</li>
+              <li>AP14869871: Printed Flexible Perovskite Solar Cells</li>
+            </ul>
+          </article>
+          <article class="paper-card research-card">
+            <h3>Postdoctoral Researcher</h3>
+            <ul class="project-list">
+              <li>Synthesis of bismuth vanadate coatings and modification of their photocatalytic properties using an intense pulsed ion beam</li>
+              <li>Synthesis of tungsten trioxide-based coatings and modification of their photocatalytic properties with a pulsed high-current ion beam</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
       <section class="section" id="expertise">
         <div class="section-head"><span class="eyebrow">Research capabilities</span><h2>Methods and tools</h2></div>
         <div class="paper-card">
@@ -571,9 +598,40 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="section-head"><span class="eyebrow">Recognition</span><h2>Selected distinction</h2></div>
-        <div class="paper-card award"><strong>Gold Medal</strong> — MSc in Nanotechnology, 2018.</div>
+      <section class="section" id="honours">
+        <div class="section-head">
+          <span class="eyebrow">Recognition and academic service</span>
+          <h2>Honours, Awards and Presentations</h2>
+        </div>
+        <div class="paper-card">
+          <div class="timeline">
+            <div class="timeline__item">
+              <span class="timeline__date">2026</span>
+              <h3>Letter of Appreciation (Алғыс хат)</h3>
+              <p>Awarded by the Rector of Zhubanov University, Aktobe, Kazakhstan, for dedicated work in providing quality education to students, professional skill, and commitment, on the Day of Higher Education Workers of Kazakhstan.</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">2022</span>
+              <h3>Top 10 Best-Performing Papers in <em>Nanomaterials</em></h3>
+              <p>Recognition for Kiani et al., “Solution-processed SnO<sub>2</sub> quantum dots for the electron transport layer of flexible and printed perovskite solar cells.”</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">2022</span>
+              <h3>First Place, Poster Presentation</h3>
+              <p>10th International Conference on Nanomaterials and Advanced Energy Storage Systems (INESS 2022), Nazarbayev University, Astana, Kazakhstan.</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">2018</span>
+              <h3>Gold Medal</h3>
+              <p>M.S. in Nanotechnology.</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">2017</span>
+              <h3>First Place, Poster and Oral Presentations</h3>
+              <p>International Conference on Solid State Physics (ICSSP’17), Centre of Excellence in Solid State Physics, University of the Punjab, Lahore, Pakistan.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="section" id="contact">
