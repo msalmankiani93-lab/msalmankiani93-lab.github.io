@@ -1,880 +1,226 @@
-<!DOCTYPE html>
+---
+name: Academic & Scientific Research Portfolio
+colors:
+  surface: '#f8f9ff'
+  surface-dim: '#cbdbf5'
+  surface-bright: '#f8f9ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#eff4ff'
+  surface-container: '#e5eeff'
+  surface-container-high: '#dce9ff'
+  surface-container-highest: '#d3e4fe'
+  on-surface: '#0b1c30'
+  on-surface-variant: '#45464d'
+  inverse-surface: '#213145'
+  inverse-on-surface: '#eaf1ff'
+  outline: '#76767e'
+  outline-variant: '#c6c6ce'
+  surface-tint: '#545d7c'
+  primary: '#06102b'
+  on-primary: '#ffffff'
+  primary-container: '#1c2541'
+  on-primary-container: '#838cae'
+  inverse-primary: '#bdc5e9'
+  secondary: '#904d00'
+  on-secondary: '#ffffff'
+  secondary-container: '#fe932c'
+  on-secondary-container: '#663500'
+  tertiary: '#081028'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#1e253e'
+  on-tertiary-container: '#858caa'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#dbe1ff'
+  primary-fixed-dim: '#bdc5e9'
+  on-primary-fixed: '#111a36'
+  on-primary-fixed-variant: '#3d4664'
+  secondary-fixed: '#ffdcc3'
+  secondary-fixed-dim: '#ffb77d'
+  on-secondary-fixed: '#2f1500'
+  on-secondary-fixed-variant: '#6e3900'
+  tertiary-fixed: '#dbe1ff'
+  tertiary-fixed-dim: '#bec5e5'
+  on-tertiary-fixed: '#131a33'
+  on-tertiary-fixed-variant: '#3e4660'
+  background: '#f8f9ff'
+  on-background: '#0b1c30'
+  surface-variant: '#d3e4fe'
+typography:
+  display-hero:
+    fontFamily: Newsreader
+    fontSize: 3.5rem
+    fontWeight: '400'
+    lineHeight: 4rem
+    letterSpacing: -0.02em
+  display-hero-mobile:
+    fontFamily: Newsreader
+    fontSize: 2.25rem
+    fontWeight: '400'
+    lineHeight: 2.75rem
+    letterSpacing: -0.01em
+  headline-lg:
+    fontFamily: Newsreader
+    fontSize: 2.5rem
+    fontWeight: '400'
+    lineHeight: 3rem
+    letterSpacing: -0.015em
+  headline-lg-mobile:
+    fontFamily: Newsreader
+    fontSize: 1.75rem
+    fontWeight: '500'
+    lineHeight: 2.25rem
+  headline-md:
+    fontFamily: Newsreader
+    fontSize: 1.75rem
+    fontWeight: '500'
+    lineHeight: 2.25rem
+  headline-sm:
+    fontFamily: Newsreader
+    fontSize: 1.25rem
+    fontWeight: '600'
+    lineHeight: 1.75rem
+  body-lg:
+    fontFamily: Inter
+    fontSize: 1.125rem
+    fontWeight: '400'
+    lineHeight: 1.875rem
+  body-md:
+    fontFamily: Inter
+    fontSize: 1rem
+    fontWeight: '400'
+    lineHeight: 1.625rem
+  body-sm:
+    fontFamily: Inter
+    fontSize: 0.875rem
+    fontWeight: '400'
+    lineHeight: 1.375rem
+  label-md:
+    fontFamily: Inter
+    fontSize: 0.875rem
+    fontWeight: '600'
+    lineHeight: 1.25rem
+    letterSpacing: 0.01em
+  label-sm:
+    fontFamily: Inter
+    fontSize: 0.75rem
+    fontWeight: '600'
+    lineHeight: 1rem
+    letterSpacing: 0.04em
+  metadata-code:
+    fontFamily: Inter
+    fontSize: 0.8125rem
+    fontWeight: '500'
+    lineHeight: 1.2rem
+    letterSpacing: 0.02em
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  gutter-desktop: 2rem
+  margin: 1.25rem
+  margin-desktop: 4rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+  space-2xl: 4rem
+  space-3xl: 6rem
+---
 
-<html lang="en">
-<head>
-<meta charset="utf-7"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Muhammad Salman Kiani — Perovskite Photovoltaics &amp; Materials Physics</title>
-<meta content="Dr. Muhammad Salman Kiani — materials physicist working on flexible printed perovskite solar cells, SnO2 quantum-dot electron transport layers, and first-principles DFT of energy materials." name="description"/>
-<!-- Updated academic profile links, publication DOI hyperlinks, and latest 2026 paper. -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<style>
-  :root{
-    --void:#0a0c14;
-    --void-2:#11141f;
-    --ink:#16181f;
-    --paper:#f2f3f5;
-    --white:#fbfbfc;
-    --muted:#6a6f7a;
-    --muted-light:#9aa0ac;
-    --halo:#fdb83a;      /* photon / light-in  */
-    --flux:#2fbfb3;      /* electron / current-out */
-    --violet:#7a6cf7;    /* spectral / quantum-dot */
-    --line:rgba(20,22,30,.10);
-    --line-2:rgba(20,22,30,.06);
-    --line-dark:rgba(255,255,255,.12);
-    --spectral:linear-gradient(90deg,var(--violet),var(--flux),var(--halo));
+## Brand & Style
 
-    --f-display:'Fraunces',Georgia,'Times New Roman',serif;
-    --f-body:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-    --f-mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+This design system establishes an authoritative, scholarly, and modern scientific presence for high-level academic research. Balancing the rigor of materials science and optoelectronics with editorial grace, the visual language draws inspiration from premier peer-reviewed journals, archival publications, and cutting-edge laboratory repositories.
 
-    --wrap:1140px;
-    --pad-y:clamp(4rem,9vw,7rem);
-  }
+The aesthetic philosophy centers on:
+- **Intellectual Gravitas:** Anchored by profound navy and slate tones, evoking institutions of higher learning, formal defense, and archival credibility.
+- **Solar Luminescence:** Subtle, precise touches of amber and solar gold serve as energetic highlights, directly referencing perovskite solar technology, photonics, and optoelectronic energy harvesting.
+- **Editorial Precision:** Broad academic white space, high-contrast serif headlines, and strictly structured geometric sans-serif data points guarantee that complex scientific achievements, citations, and metrics remain immediately legible and dignified.
 
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-  body{
-    font-family:var(--f-body);
-    color:var(--ink);
-    background:var(--white);
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-    text-rendering:optimizeLegibility;
-    overflow-x:hidden;
-  }
-  a{color:inherit;text-decoration:none}
-  ::selection{background:var(--halo);color:var(--void)}
+## Colors
 
-  .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
+The palette is engineered to present deep scholastic authority while maintaining high visual contrast on archival paper backgrounds:
 
-  /* ── utility type ── */
-  .eyebrow{
-    font-family:var(--f-mono);
-    font-size:.72rem;
-    letter-spacing:.24em;
-    text-transform:uppercase;
-    color:var(--muted);
-    display:inline-flex;align-items:center;gap:.6rem;
-  }
-  .eyebrow::before{
-    content:"";width:26px;height:1px;background:var(--halo);display:inline-block;
-  }
+- **Primary (`#1C2541` - Deep Slate Navy):** The structural backbone. Applied across primary actions, dominant section headers, structural rules, and primary iconography.
+- **Secondary (`#D97706` - Optoelectronic Amber):** Represents solar energy, optoelectronic excitement, and high-impact scientific discoveries. Reserved for active navigation indicators, key metrics, award highlights, and DOI links.
+- **Tertiary (`#0B132B` - Archival Deep Obsidian):** Used for maximum typographic contrast on lead headings, high-level impact counters, and formal publication titles.
+- **Neutral (`#64748B` - Slate Metadata Grey):** Applied to technical subtitles, bibtex metadata, journal impact factors, publication dates, and standard borders.
+- **Canvas & Surface Foundations:**
+  - Base canvas: `#F8FAFC` (Crisp Technical Paper)
+  - Card/Container surface: `#FFFFFF` (Pure Optical White)
+  - Muted container fill: `#F1F5F9` (Scholarly Field Slate)
 
-  /* ══════════════ NAV ══════════════ */
-  .nav{
-    position:sticky;top:0;z-index:50;
-    background:rgba(251,251,252,.82);
-    backdrop-filter:saturate(160%) blur(12px);
-    border-bottom:1px solid var(--line);
-  }
-  .nav__inner{
-    max-width:var(--wrap);margin-inline:auto;
-    padding:.9rem clamp(1.25rem,4vw,2.5rem);
-    display:flex;align-items:center;justify-content:space-between;gap:1rem;
-  }
-  .brand{display:flex;align-items:center;gap:.7rem;font-weight:600}
-  .brand__mark{width:30px;height:30px;flex:none}
-  .brand__name{font-family:var(--f-display);font-size:1.02rem;letter-spacing:-.01em}
-  .brand__name small{display:block;font-family:var(--f-mono);font-size:.6rem;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;font-weight:500}
-  .nav__links{display:flex;gap:1.9rem;align-items:center}
-  .nav__links a{
-    font-size:.82rem;color:var(--muted);position:relative;transition:color .2s;
-  }
-  .nav__links a:hover{color:var(--ink)}
-  .nav__links a::after{
-    content:"";position:absolute;left:0;bottom:-4px;height:1.5px;width:0;background:var(--halo);transition:width .25s;
-  }
-  .nav__links a:hover::after{width:100%}
-  @media(max-width:820px){.nav__links{display:none}}
+## Typography
 
-  /* ══════════════ HERO ══════════════ */
-  .hero{
-    background:radial-gradient(120% 140% at 78% 0%,#151a2b 0%,var(--void) 55%);
-    color:#fff;position:relative;overflow:hidden;
-    border-bottom:1px solid var(--line-dark);
-  }
-  .hero::before{ /* faint lattice grid */
-    content:"";position:absolute;inset:0;
-    background-image:linear-gradient(var(--line-dark) 1px,transparent 1px),linear-gradient(90deg,var(--line-dark) 1px,transparent 1px);
-    background-size:46px 46px;
-    -webkit-mask-image:radial-gradient(80% 80% at 75% 20%,#000,transparent 75%);
-    mask-image:radial-gradient(80% 80% at 75% 20%,#000,transparent 75%);
-    opacity:.5;pointer-events:none;
-  }
-  .hero__grid{
-    position:relative;z-index:1;
-    display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,5vw,4rem);
-    align-items:center;
-    padding-block:clamp(3.5rem,8vw,6rem);
-  }
-  .hero .eyebrow{color:var(--muted-light)}
-  .hero .eyebrow::before{background:var(--halo)}
-  .hero h1{
-    font-family:var(--f-display);
-    font-weight:600;
-    font-size:clamp(2.5rem,6.4vw,4.4rem);
-    line-height:1.02;letter-spacing:-.025em;
-    margin:1.1rem 0 .5rem;
-  }
-  .hero h1 .accent{
-    background:var(--spectral);
-    -webkit-background-clip:text;background-clip:text;color:transparent;
-    font-style:italic;
-  }
-  .hero__role{
-    font-size:1.06rem;color:#dfe3ea;max-width:34ch;margin-bottom:.4rem;
-  }
-  .hero__role b{color:#fff;font-weight:600}
-  .hero__where{
-    font-family:var(--f-mono);font-size:.8rem;color:var(--muted-light);
-    letter-spacing:.02em;margin-bottom:1.8rem;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;
-  }
-  .hero__where span{color:var(--flux)}
+The typographical hierarchy creates a clear dichotomy between scholarly discourse and empirical data:
 
-  /* profile links */
-  .links{display:flex;flex-wrap:wrap;gap:.55rem;margin-bottom:2rem}
-  .plink{
-    display:inline-flex;align-items:center;gap:.45rem;
-    font-family:var(--f-mono);font-size:.74rem;letter-spacing:.02em;
-    padding:.5rem .8rem;border-radius:999px;
-    border:1px solid var(--line-dark);color:#e7eaf0;
-    background:rgba(255,255,255,.02);
-    transition:all .22s ease;
-  }
-  .plink:hover{border-color:var(--halo);background:rgba(253,184,58,.12);color:#fff;transform:translateY(-1px)}
-  .plink svg{width:14px;height:14px;flex:none}
-  .plink--orcid:hover{border-color:#a6ce39;background:rgba(166,206,57,.16)}
-  .plink--mail:hover{border-color:var(--flux);background:rgba(47,191,179,.15)}
+- **The Editorial Serif (`Newsreader`):** Selected for its intellectual lineage, literary clarity, and formal grace. Newsreader serves display headlines, research narrative introductions, paper titles, and key quotes. It preserves humanistic warmth and traditional academic authority.
+- **The Systematic Sans-serif (`Inter`):** Selected for neutral, high-density legibility across small data points, abstracts, tabular data, authorship lists, and user interface controls.
+- **Stylistic Conventions:**
+  - Research paper citations italicize the journal name and volume using `Newsreader`.
+  - Author listings, metrics, affiliations, and DOIs strictly utilize `Inter` with slightly enhanced tracking on uppercase metadata labels (`label-sm`).
 
-  /* hero stats */
-  .stats{display:flex;flex-wrap:wrap;gap:2.1rem}
-  .stat__n{font-family:var(--f-display);font-size:2rem;font-weight:600;line-height:1;color:#fff}
-  .stat__n .u{font-size:1rem;color:var(--halo);vertical-align:.35em;margin-left:2px}
-  .stat__l{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-light);margin-top:.5rem}
+## Layout & Spacing
 
+This design system utilizes an asymmetric, content-first 12-column grid system bounded by generous scholarly margins:
 
-  /* ── device visual ── */
-  .hero__visuals{
-    display:grid;gap:1.45rem;align-items:center;justify-items:center;
-  }
+- **Desktop Layout (≥ 1024px):** Max container width of 1280px with 64px (`margin-desktop`) canvas padding and 32px (`gutter-desktop`) inter-column separation. Research overview panels use an asymmetric 4/8 column split (4 columns for profile sticky metrics/indices, 8 columns for narrative and publication feeds).
+- **Tablet Layout (768px – 1023px):** 8-column layout with 32px margin and 24px gutter. Metric rows collapse to a 2x2 grid.
+- **Mobile Layout (< 768px):** Single-column vertical flow with 20px (`margin`) edge protection and 16px vertical element spacing.
+- **Academic Rhythm:** Generous vertical rhythm (`space-2xl` to `space-3xl`) separates thematic domains (e.g., from Biography to Ongoing Research Initiatives to Peer-Reviewed Works) to simulate reading an unhurried, distinguished broadsheet or journal supplement.
 
-  /* ── device-stack signature ── */
-  .device{position:relative;width:100%;max-width:360px;margin-inline:auto}
-  .device svg{width:100%;height:auto;display:block;overflow:visible}
-  .lay{transition:transform .3s}
-  .device:hover .lay{transform:none}
-  .photon{
-    fill:var(--halo);
-    filter:drop-shadow(0 0 6px var(--halo));
-    animation:fall 3.6s ease-in-out infinite;
-  }
-  .electron{
-    fill:var(--flux);
-    filter:drop-shadow(0 0 5px var(--flux));
-    animation:drift 3.6s ease-in-out infinite;
-  }
-  @keyframes fall{
-    0%{transform:translate(0,-58px);opacity:0}
-    18%{opacity:1}
-    45%,100%{transform:translate(0,0);opacity:0}
-  }
-  @keyframes drift{
-    0%,42%{transform:translate(0,0);opacity:0}
-    52%{opacity:1}
-    100%{transform:translate(64px,26px);opacity:0}
-  }
-  .device__cap{
-    text-align:center;font-family:var(--f-mono);font-size:.64rem;letter-spacing:.13em;
-    text-transform:uppercase;color:var(--muted-light);margin-top:1.2rem;
-  }
+## Elevation & Depth
 
-  @media(max-width:820px){
-    .hero__grid{grid-template-columns:1fr}
-    .hero__visuals{order:-1}
-    .portrait-card{max-width:260px}
-    .device{max-width:250px}
-  }
+To preserve an authentic scientific and editorial feel, this design system avoids heavy shadows, blurred skeumorphism, or high-gloss effects. Instead, depth is constructed through **architectural paper layers and low-contrast borders**:
 
-  /* ══════════════ SECTION SHELL ══════════════ */
-  section{padding-block:var(--pad-y)}
-  .band-paper{background:var(--paper)}
-  .sec-head{max-width:60ch;margin-bottom:3rem}
-  .sec-head h2{
-    font-family:var(--f-display);font-weight:600;
-    font-size:clamp(1.9rem,4vw,2.7rem);letter-spacing:-.02em;line-height:1.08;
-    margin:1rem 0 .8rem;
-  }
-  .sec-head p{color:var(--muted);font-size:1.04rem;max-width:52ch}
+- **Level 0 (Flat Ground):** `#F8FAFC` base academic canvas.
+- **Level 1 (Paper Cards & Modules):** Pure white `#FFFFFF` surface bounded by a subtle hairline rule: `1px solid #E2E8F0`. No shadow in rest state.
+- **Level 2 (Hover State & Interactive Cards):** Subtle upward micro-lift accompanied by an ambient, highly-diffused slate shadow: `box-shadow: 0 4px 20px -2px rgba(28, 37, 65, 0.06), 0 2px 6px -1px rgba(28, 37, 65, 0.04)`. The hairline border subtly shifts from `#E2E8F0` to `#CBD5E1`.
+- **Level 3 (Modals, BibTeX Drawers, Nav Overlays):** Elevation `0 12px 32px -4px rgba(11, 19, 43, 0.12)`, anchored with a crisp `1px solid #CBD5E1` boundary.
 
-  /* ── About / research thrusts ── */
-  .thrusts{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem}
-  .thrust{
-    background:var(--white);border:1px solid var(--line);border-radius:16px;
-    padding:2rem 1.9rem;position:relative;overflow:hidden;
-    transition:transform .25s,box-shadow .25s,border-color .25s;
-  }
-  .thrust::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent,var(--halo))}
-  .thrust:hover{transform:translateY(-4px);box-shadow:0 18px 40px -24px rgba(10,12,20,.35);border-color:transparent}
-  .thrust--a{--accent:var(--halo)}
-  .thrust--b{--accent:var(--violet)}
-  .thrust__no{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.14em;color:var(--muted)}
-  .thrust h3{font-family:var(--f-display);font-size:1.32rem;font-weight:600;margin:.6rem 0 .7rem;letter-spacing:-.01em}
-  .thrust p{color:#40444d;font-size:.96rem}
-  .thrust__tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.2rem}
-  .tag{
-    font-family:var(--f-mono);font-size:.68rem;letter-spacing:.02em;
-    padding:.28rem .6rem;border-radius:6px;background:var(--paper);color:#4a4e57;border:1px solid var(--line);
-  }
-  @media(max-width:720px){.thrusts{grid-template-columns:1fr}}
+## Shapes
 
-  /* ══════════════ PUBLICATIONS ══════════════ */
-  .pub-meta{display:flex;gap:1.2rem;flex-wrap:wrap;margin-bottom:2.6rem}
-  .pill{
-    font-family:var(--f-mono);font-size:.72rem;letter-spacing:.04em;
-    padding:.4rem .75rem;border-radius:999px;border:1px solid var(--line);
-    color:var(--muted);display:inline-flex;align-items:center;gap:.45rem;background:var(--white);
-  }
-  .pill b{color:var(--ink);font-weight:600}
-  .dot{width:7px;height:7px;border-radius:50%;display:inline-block}
-  .dot--q1{background:var(--flux)}
-  .dot--q2{background:var(--halo)}
+The shape system adopts a refined, academic restraint (`roundedness: 1`):
 
-  .year-block{margin-bottom:.4rem}
-  .year-rule{
-    display:flex;align-items:center;gap:1rem;margin:2.4rem 0 1.1rem;
-  }
-  .year-rule:first-child{margin-top:0}
-  .year-rule .y{font-family:var(--f-display);font-size:1.5rem;font-weight:600;color:var(--ink)}
-  .year-rule .line{flex:1;height:1px;background:var(--line)}
-  .year-rule .c{font-family:var(--f-mono);font-size:.7rem;color:var(--muted-light);letter-spacing:.1em}
+- **Default Element Radius (`0.25rem` / 4px):** Applied to buttons, search inputs, badges, publication tags, and research metric containers. Gives an architectural, crisp paper edge without feeling blunt or aggressive.
+- **Card & Structural Surface Radius (`0.5rem` / 8px):** Applied to publication cards, featured research module wrappers, and interactive topic panels.
+- **Pill Exception (`rounded-full`):** Strictly reserved for micro status tags (e.g., "Open Access", "Peer-Reviewed", "Under Review") to differentiate categorical markers from functional interactive cards.
 
-  .pub{
-    display:grid;grid-template-columns:auto 1fr auto;gap:1.1rem;
-    padding:1.15rem 0;border-bottom:1px solid var(--line-2);align-items:baseline;
-  }
-  .pub:hover .pub__title{color:var(--flux)}
-  .pub__idx{font-family:var(--f-mono);font-size:.72rem;color:var(--muted-light);padding-top:.2rem}
-  .pub__title{font-family:var(--f-display);font-size:1.1rem;font-weight:500;line-height:1.3;letter-spacing:-.005em;transition:color .2s;display:block;margin-bottom:.35rem}
+## Components
 
-  .pub__title::after{
-    content:" ↗";font-family:var(--f-mono);font-size:.72em;color:var(--muted-light);
-    white-space:nowrap;
-  }
+### Buttons
+- **Primary:** Filled `#1C2541` background, `#FFFFFF` text, `0.25rem` radius, `0.75rem 1.5rem` padding. Fonts set in `label-md`. Hover triggers `#0B132B` with a sharp transition.
+- **Secondary / Solar Accent:** Bordered in `#D97706` with `#D97706` text. Hover transitions to `#D97706` fill with `#FFFFFF` text. Used for highlighted calls-to-action (e.g., "Download Full CV", "Access Perovskite Lab Data").
+- **Ghost / Editorial:** Transparent background, `#1C2541` text with an underline appearing on hover. Used for citations and paper preprint links.
 
-  .pub__authors{font-size:.86rem;color:var(--muted)}
-  .pub__authors .me{color:var(--ink);font-weight:600}
-  .pub__journal{font-size:.86rem;color:#4a4e57;margin-top:.15rem}
-  .pub__journal em{font-style:italic;color:var(--ink)}
-  .qbadge{
-    font-family:var(--f-mono);font-size:.68rem;font-weight:600;letter-spacing:.03em;
-    padding:.24rem .55rem;border-radius:6px;white-space:nowrap;align-self:start;margin-top:.15rem;
-  }
-  .qbadge--q1{background:rgba(47,191,179,.14);color:#128276;border:1px solid rgba(47,191,179,.35)}
-  .qbadge--q2{background:rgba(253,184,58,.15);color:#9a6b00;border:1px solid rgba(253,184,58,.4)}
-  .qbadge--na{background:var(--paper);color:var(--muted);border:1px solid var(--line)}
-  @media(max-width:720px){
-    .pub{grid-template-columns:auto 1fr;gap:.7rem}
-    .qbadge{grid-column:2;justify-self:start;margin-top:.5rem}
-  }
+### Publication Cards
+- **Container:** Pure `#FFFFFF` background, `1px solid #E2E8F0` border, `1.5rem` padding, `0.5rem` border radius.
+- **Header:** Year and journal title formatted in `label-sm` (`#64748B`), paired with an amber "Featured" or "Open Access" tag.
+- **Title:** `headline-sm` using `Newsreader`, `#0B132B`. Hover triggers secondary solar amber `#D97706`.
+- **Authors:** `body-sm` using `Inter`, highlighting "M. S. Kiani" in bold primary navy `#1C2541`.
+- **Actions Row:** Embedded DOI pill button, citation count badge, and expandable "BibTeX / Abstract" toggle button.
 
-  /* ══════════════ TIMELINE (edu + exp) ══════════════ */
-  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem)}
-  @media(max-width:860px){.two-col{grid-template-columns:1fr;gap:3.5rem}}
-  .col-title{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:1.8rem;display:flex;align-items:center;gap:.6rem}
-  .col-title::before{content:"";width:22px;height:1px;background:var(--flux)}
+### Metric Counters (h-index, Citations, Grants)
+- **Container:** Subtle off-white box (`#F8FAFC`), bordered with `#E2E8F0`.
+- **Number:** Large display numeral (`headline-lg`) in `#1C2541`.
+- **Label:** `label-sm` uppercase text in `#64748B`, tracking `0.04em`.
+- **Accent Indicator:** A top hairline border of `2px solid #D97706` to indicate verified live scientific impact.
 
-  .tl{position:relative;padding-left:1.6rem}
-  .tl::before{content:"";position:absolute;left:4px;top:6px;bottom:6px;width:1.5px;background:var(--line)}
-  .tl__item{position:relative;padding-bottom:1.9rem}
-  .tl__item:last-child{padding-bottom:0}
-  .tl__item::before{
-    content:"";position:absolute;left:-1.6rem;top:5px;width:9px;height:9px;border-radius:50%;
-    background:var(--white);border:2px solid var(--muted-light);transition:border-color .2s,background .2s;
-  }
-  .tl__item:hover::before{border-color:var(--halo);background:var(--halo)}
-  .tl__item.is-now::before{border-color:var(--flux);background:var(--flux);box-shadow:0 0 0 4px rgba(47,191,179,.18)}
-  .tl__when{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.03em;color:var(--muted)}
-  .tl__what{font-family:var(--f-display);font-size:1.14rem;font-weight:600;margin:.25rem 0 .15rem;letter-spacing:-.01em}
-  .tl__where{font-size:.9rem;color:#4a4e57}
-  .tl__note{font-size:.85rem;color:var(--muted);margin-top:.4rem;font-style:italic}
-  .tl__badge{display:inline-block;font-family:var(--f-mono);font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:#9a6b00;background:rgba(253,184,58,.16);border:1px solid rgba(253,184,58,.4);padding:.15rem .45rem;border-radius:5px;margin-top:.5rem}
+### Interactive Topic Tabs
+- **Tabs:** Horizontal bar with an archival underline indicator. Active tab features `#1C2541` text with a `2px solid #D97706` bottom border offset by `0.5rem`. Inactive tabs render in `#64748B`.
 
-  /* ══════════════ SKILLS ══════════════ */
-  .skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
-  @media(max-width:860px){.skill-grid{grid-template-columns:1fr}}
-  .skill{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:1.7rem 1.6rem}
-  .skill__ic{width:36px;height:36px;border-radius:9px;display:grid;place-items:center;margin-bottom:1rem}
-  .skill--fab .skill__ic{background:rgba(253,184,58,.16)}
-  .skill--char .skill__ic{background:rgba(47,191,179,.16)}
-  .skill--comp .skill__ic{background:rgba(122,108,247,.16)}
-  .skill__ic svg{width:19px;height:19px}
-  .skill h3{font-family:var(--f-display);font-size:1.16rem;font-weight:600;margin-bottom:.9rem}
-  .skill__list{display:flex;flex-wrap:wrap;gap:.4rem}
-  .chip{font-family:var(--f-mono);font-size:.7rem;padding:.3rem .58rem;border-radius:6px;background:var(--paper);border:1px solid var(--line);color:#4a4e57}
+### Badges & Tags
+- **DOI & Index Badges:** Compact height (`1.5rem`), `label-sm` font size, background `#F1F5F9`, text `#1C2541`, with a `1px solid #CBD5E1` border.
+- **Impact Badge:** Background `#FEF3C7` (soft solar amber wash), text `#92400E`, border `1px solid #FDE68A`.
 
-  /* ══════════════ AWARDS ══════════════ */
-  .awards{display:grid;grid-template-columns:1fr 1fr;gap:1rem 2.5rem}
-  @media(max-width:720px){.awards{grid-template-columns:1fr}}
-  .award{display:grid;grid-template-columns:auto 1fr;gap:1rem;padding:1.1rem 0;border-bottom:1px solid var(--line-2);align-items:start}
-  .award__mk{font-family:var(--f-mono);font-size:1.1rem;color:var(--halo);line-height:1.3}
-  .award__t{font-size:.98rem;color:var(--ink);font-weight:500;line-height:1.4}
-  .award__s{font-size:.82rem;color:var(--muted);margin-top:.2rem}
-
-  /* ══════════════ CONTACT ══════════════ */
-  .contact{background:radial-gradient(120% 160% at 20% 0%,#151a2b 0%,var(--void) 60%);color:#fff;border-top:1px solid var(--line-dark)}
-  .contact .sec-head h2{color:#fff}
-  .contact .eyebrow{color:var(--muted-light)}
-  .contact__grid{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(2rem,5vw,4rem)}
-  @media(max-width:860px){.contact__grid{grid-template-columns:1fr}}
-  .cbtns{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.8rem}
-  .cbtn{
-    display:inline-flex;align-items:center;gap:.55rem;padding:.75rem 1.15rem;border-radius:10px;
-    font-family:var(--f-mono);font-size:.8rem;letter-spacing:.02em;transition:all .22s;
-  }
-  .cbtn--solid{background:var(--halo);color:var(--void);font-weight:600}
-  .cbtn--solid:hover{background:#ffc860;transform:translateY(-2px)}
-  .cbtn--ghost{border:1px solid var(--line-dark);color:#e7eaf0}
-  .cbtn--ghost:hover{border-color:var(--flux);color:#fff;background:rgba(47,191,179,.1)}
-  .cbtn svg{width:15px;height:15px}
-
-  .refs{border-left:1px solid var(--line-dark);padding-left:clamp(1.5rem,3vw,2.5rem)}
-  @media(max-width:860px){.refs{border-left:0;padding-left:0;border-top:1px solid var(--line-dark);padding-top:2.2rem}}
-  .refs h4{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted-light);margin-bottom:1.4rem}
-  .ref{padding:.7rem 0;border-bottom:1px solid var(--line-dark)}
-  .ref:last-child{border-bottom:0}
-  .ref__n{font-family:var(--f-display);font-size:1.02rem;font-weight:600;color:#fff}
-  .ref__d{font-size:.82rem;color:var(--muted-light);margin-top:.15rem}
-
-  /* ══════════════ FOOTER ══════════════ */
-  footer{background:var(--void-2);color:var(--muted-light);padding:2.2rem 0;border-top:1px solid var(--line-dark)}
-  .foot{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.03em}
-  .foot a:hover{color:var(--halo)}
-
-  /* ── reveal animation ── */
-  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
-  .reveal.in{opacity:1;transform:none}
-
-  @media(prefers-reduced-motion:reduce){
-    *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
-    .reveal{opacity:1;transform:none}
-  }
-
-  :focus-visible{outline:2.5px solid var(--halo);outline-offset:3px;border-radius:3px}
-</style>
-</head>
-<body>
-<!-- ══════════════ NAV ══════════════ -->
-<header class="nav">
-<div class="nav__inner">
-<a aria-label="Muhammad Salman Kiani — home" class="brand" href="#top">
-<!-- perovskite ABX3 unit-cell mark -->
-<svg aria-hidden="true" class="brand__mark" fill="none" viewbox="0 0 40 40">
-<path d="M8 12l12-6 12 6-12 6-12-6z" stroke="#16181f" stroke-linejoin="round" stroke-width="1.5"></path>
-<path d="M8 12v16l12 6 12-6V12" stroke="#16181f" stroke-linejoin="round" stroke-width="1.5"></path>
-<path d="M20 18v16M8 12l12 6 12-6M8 28l12-6 12 6" stroke="#6a6f7a" stroke-linejoin="round" stroke-width="1"></path>
-<circle cx="20" cy="20" fill="#fdb83a" r="3"></circle>
-</svg>
-<span class="brand__name">M. S. Kiani<small>Materials Physics</small></span>
-</a>
-<nav aria-label="Sections" class="nav__links">
-<a href="#about">Research</a>
-<a href="#publications">Publications</a>
-<a href="#experience">Experience</a>
-<a href="#skills">Expertise</a>
-<a href="#contact">Contact</a>
-</nav>
-</div>
-</header>
-<main id="top">
-<!-- ══════════════ HERO ══════════════ -->
-<section class="hero">
-<div class="wrap">
-<div class="hero__grid">
-<div>
-<span class="eyebrow">Materials Physicist · Photovoltaics</span>
-<h1>Muhammad<br/>Salman <span class="accent">Kiani</span></h1>
-<p class="hero__role">I engineer <b>flexible, printed perovskite solar cells</b> and study energy materials from the atom up with first-principles theory.</p>
-<p class="hero__where">Senior Lecturer · Heriot-Watt University <span>Aktobe Campus</span> · Kazakhstan</p>
-<div class="links">
-<a class="plink plink--orcid" href="https://orcid.org/0000-0003-1474-6308" rel="noopener" target="_blank">
-<svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="#a6ce39" r="12"></circle><path d="M7.4 8.6a.9.9 0 1 0 0-1.8.9.9 0 0 0 0 1.8zm-.7 1.5h1.4V17H6.7v-6.9zm3 0h2.7c2.6 0 3.7 1.9 3.7 3.4 0 1.7-1.3 3.5-3.7 3.5H9.7v-6.9zm1.4 1.3v4.3h1.2c1.7 0 2.1-1.3 2.1-2.1 0-1.4-.9-2.2-2.2-2.2h-1.1z" fill="#fff"></path></svg>
-            ORCID
-          </a>
-<a class="plink" href="https://www.scopus.com/authid/detail.uri?authorId=57209498178" rel="noopener" target="_blank">
-<svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.7"></circle><path d="M16 16l4 4" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg>
-            Scopus
-          </a>
-<a aria-label="Web of Science author search for Muhammad Salman Kiani" class="plink" href="https://www.webofscience.com/wos/author/search" rel="noopener" target="_blank" title="Search Muhammad Salman Kiani in Web of Science using ORCID 0000-0003-1474-6308">
-<svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><path d="M3 6l3 12 4-9 4 9 3-12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></svg>
-            Web of Science
-          </a>
-<a class="plink" href="https://scholar.google.com/citations?hl=en&amp;user=LndKdOAAAAAJ" rel="noopener" target="_blank">
-<svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><path d="M12 4L2 9l10 5 10-5-10-5z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.6"></path><path d="M6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5" stroke="currentColor" stroke-linecap="round" stroke-width="1.6"></path></svg>
-            Scholar
-          </a>
-<a class="plink" href="https://kz.linkedin.com/in/muhammad-salman-kiani-995a6523b" rel="noopener" target="_blank">
-<svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><rect height="18" rx="3" stroke="currentColor" stroke-width="1.6" width="18" x="3" y="3"></rect><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 10v7" stroke="currentColor" stroke-linecap="round" stroke-width="1.6"></path></svg>
-            LinkedIn
-          </a>
-<a class="plink" href="https://www.researchgate.net/profile/Muhammad-Salman-Kiani" rel="noopener" target="_blank">
-<svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"></circle><path d="M9 16V9h2.5a2 2 0 0 1 0 4H9m3 0l2.5 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg>
-            ResearchGate
-          </a>
-<a class="plink plink--mail" href="mailto:m.salmankiani93@gmail.com">
-<svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><rect height="14" rx="2" stroke="currentColor" stroke-width="1.6" width="18" x="3" y="5"></rect><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-linecap="round" stroke-width="1.6"></path></svg>
-            Email
-          </a>
-</div>
-<div class="stats">
-<div class="stat">
-<div class="stat__n">14</div>
-<div class="stat__l">Peer-reviewed papers</div>
-</div>
-<div class="stat">
-<div class="stat__n">8<span class="u">Q1</span></div>
-<div class="stat__l">First-quartile journals</div>
-</div>
-<div class="stat">
-<div class="stat__n">3</div>
-<div class="stat__l">First-author works</div>
-</div>
-<div class="stat">
-<div class="stat__n">2019<span class="u" style="font-size:.85rem">–26</span></div>
-<div class="stat__l">Publication span</div>
-</div>
-</div>
-</div>
-<!-- SIGNATURE: flexible perovskite solar-cell device stack -->
-<div class="hero__visuals"><div aria-label="Cross-section of a flexible perovskite solar cell: light in, current out" class="device">
-<svg role="img" viewbox="0 0 320 300">
-<title>Flexible perovskite solar cell device stack</title>
-<!-- incoming photon path (dashed) -->
-<line stroke="rgba(253,184,58,.35)" stroke-dasharray="3 4" stroke-width="1.5" x1="70" x2="70" y1="18" y2="72"></line>
-<text fill="#fdb83a" font-family="'IBM Plex Mono',monospace" font-size="13" font-style="italic" x="78" y="24">hν</text>
-<circle class="photon" cx="70" cy="72" r="4"></circle>
-<!-- layers (top → bottom) -->
-<g class="lay">
-<rect fill="#3a2f5e" height="20" rx="3" width="200" x="40" y="72"></rect>
-<text fill="#9aa0ac" font-family="'IBM Plex Mono',monospace" font-size="10.5" x="250" y="86">Metal electrode</text>
-</g>
-<g class="lay">
-<rect fill="#4c4570" height="20" rx="3" width="200" x="40" y="96"></rect>
-<text fill="#9aa0ac" font-family="'IBM Plex Mono',monospace" font-size="10.5" x="250" y="110">HTL</text>
-</g>
-<g class="lay">
-<rect fill="#241a12" height="34" rx="3" stroke="#3a2a1a" stroke-width="1" width="200" x="40" y="120"></rect>
-<text fill="#c9ccd3" font-family="'IBM Plex Mono',monospace" font-size="10.5" x="250" y="141">Perovskite</text>
-</g>
-<!-- highlighted layer: his specialty -->
-<g class="lay">
-<rect fill="#0f4d47" height="22" rx="3" stroke="#2fbfb3" stroke-width="1.4" width="200" x="40" y="158"></rect>
-<text fill="#2fbfb3" font-family="'IBM Plex Mono',monospace" font-size="10.5" font-weight="600" x="250" y="173">SnO₂ ETL ◂</text>
-</g>
-<g class="lay">
-<rect fill="#1f3550" height="20" rx="3" width="200" x="40" y="184"></rect>
-<text fill="#9aa0ac" font-family="'IBM Plex Mono',monospace" font-size="10.5" x="250" y="198">ITO</text>
-</g>
-<g class="lay">
-<rect fill="#161821" height="24" rx="6" stroke="rgba(255,255,255,.14)" stroke-width="1" width="200" x="40" y="208"></rect>
-<text fill="#9aa0ac" font-family="'IBM Plex Mono',monospace" font-size="10.5" x="250" y="223">Flexible PET</text>
-</g>
-<!-- extracted current path -->
-<path d="M40 218 H22 V255" fill="none" stroke="rgba(47,191,179,.4)" stroke-width="1.5"></path>
-<circle class="electron" cx="40" cy="218" r="3.5"></circle>
-<text fill="#2fbfb3" font-family="'IBM Plex Mono',monospace" font-size="12" font-style="italic" x="8" y="272">e⁻</text>
-<!-- flex curve indicator -->
-<path d="M40 244 Q140 262 240 244" fill="none" stroke="rgba(255,255,255,.18)" stroke-dasharray="2 5" stroke-width="1"></path>
-</svg>
-<div class="device__cap">SnO₂-based flexible PSC · PhD focus</div>
-</div></div>
-</div>
-</div>
-</section>
-<!-- ══════════════ ABOUT / RESEARCH ══════════════ -->
-<section class="band-paper" id="about">
-<div class="wrap">
-<div class="sec-head reveal">
-<span class="eyebrow">Research focus</span>
-<h2>Two questions, one thread: how do we make clean energy materials work better?</h2>
-<p>My work runs from the lab bench to the supercomputer — fabricating next-generation thin-film solar cells, and predicting the properties of energy materials before they are ever synthesised.</p>
-</div>
-<div class="thrusts">
-<article class="thrust thrust--a reveal">
-<div class="thrust__no">01 · Experimental</div>
-<h3>Flexible &amp; printed perovskite solar cells</h3>
-<p>Solution-processed SnO₂ quantum-dot electron transport layers for lightweight, roll-to-roll compatible photovoltaics — advancing portable and bifacial optoelectronic devices, and untangling the hysteresis that limits their performance.</p>
-<div class="thrust__tags">
-<span class="tag">SnO₂ quantum dots</span>
-<span class="tag">Slot-die coating</span>
-<span class="tag">ETL engineering</span>
-<span class="tag">Photodetectors</span>
-<span class="tag">Device physics</span>
-</div>
-</article>
-<article class="thrust thrust--b reveal">
-<div class="thrust__no">02 · Computational</div>
-<h3>First-principles design of energy materials</h3>
-<p>Density functional theory studies of perovskite-type hydrides (XYH₃) for solid-state hydrogen storage, plus the elastic, electronic, optical and thermoelectric behaviour of oxides under pressure — screening candidates for a hydrogen economy.</p>
-<div class="thrust__tags">
-<span class="tag">DFT</span>
-<span class="tag">Hydrogen storage</span>
-<span class="tag">Hydride perovskites</span>
-<span class="tag">Thermoelectrics</span>
-<span class="tag">Band structure</span>
-</div>
-</article>
-</div>
-</div>
-</section>
-<!-- ══════════════ PUBLICATIONS ══════════════ -->
-<section id="publications">
-<div class="wrap">
-<div class="sec-head reveal">
-<span class="eyebrow">Selected output</span>
-<h2>Publications</h2>
-<p>Fourteen peer-reviewed articles across photovoltaics, nanomaterials and computational materials science.</p>
-</div>
-<div class="pub-meta reveal">
-<span class="pill"><b>14</b> total articles</span>
-<span class="pill"><span class="dot dot--q1"></span><b>8</b> Q1 journals</span>
-<span class="pill"><span class="dot dot--q2"></span><b>4</b> Q2 journals</span>
-<span class="pill"><b>ACS · RSC · Elsevier</b> publishers</span>
-</div>
-<!-- 2026 -->
-<div class="reveal">
-<div class="year-rule"><span class="y">2026</span><span class="line"></span><span class="c">2 articles</span></div>
-<article class="pub">
-<div class="pub__idx">01</div>
-<div>
-<a class="pub__title" href="https://doi.org/10.1111/jace.70979" rel="noopener" target="_blank" title="Open publication via DOI">A DFT Study for Investigating Structural, Mechanical, and Optoelectronic Properties of Inverse Perovskite SbPSr₃</a>
-<div class="pub__authors">Abu Bakar, <span class="me">Muhammad Salman Kiani</span>, Shriyar Tariq, Timur Sh. Atabaev, Malik Abdul Rehman, Muhammad Farooq Khan</div>
-<div class="pub__journal"><em>Journal of the American Ceramic Society</em> · 109 · e70979</div>
-</div>
-<span class="qbadge qbadge--na">2026</span>
-</article><article class="pub">
-<div class="pub__idx">02</div>
-<div>
-<a class="pub__title" href="https://doi.org/10.1016/j.chemphys.2026.113162" rel="noopener" target="_blank" title="Open publication via DOI">Comprehensive density functional theory analysis of structural, elastic, electronic, optical, thermodynamic, thermoelectric and hydrogen storage properties of CaXH₃ (X = Na, Al, Y)</a>
-<div class="pub__authors">A. Bakar, M. Yasir, <span class="me">M. S. Kiani</span>, J. A. Baig, A. Rashid, M. Tahir, Z. H. Shah</div>
-<div class="pub__journal"><em>Chemical Physics</em></div>
-</div>
-<span class="qbadge qbadge--q2">Q2</span>
-</article>
-</div>
-<!-- 2025 -->
-<div class="reveal">
-<div class="year-rule"><span class="y">2025</span><span class="line"></span><span class="c">3 articles</span></div>
-<article class="pub">
-<div class="pub__idx">03</div>
-<div>
-<a class="pub__title" href="https://doi.org/10.1016/j.apsusc.2025.163874" rel="noopener" target="_blank" title="Open publication via DOI">Creation of light-trapping structures on spin-coated PVA-containing WO₃ photoanodes by intense pulsed ion beam irradiation and their photocatalytic studies</a>
-<div class="pub__authors">A. Abduvalov, A. Kemelbay, K. Baigarin, <span class="me">M. S. Kiani</span>, T. Sh. Atabaev, M. Kaikanov</div>
-<div class="pub__journal"><em>Applied Surface Science</em></div>
-</div>
-<span class="qbadge qbadge--q1">Q1</span>
-</article>
-<article class="pub">
-<div class="pub__idx">04</div>
-<div>
-<a class="pub__title" href="https://doi.org/10.1016/j.rinp.2024.108078" rel="noopener" target="_blank" title="Open publication via DOI">First-principles study on structural, elasto-mechanical, electronic, thermodynamic and hydrogen storage properties of XGeH₃ (X = K, Rb) hydrides</a>
-<div class="pub__authors"><span class="me">Muhammad Salman Kiani</span>, Abu Bakar, Erum Rehman</div>
-<div class="pub__journal"><em>Results in Physics</em></div>
-</div>
-<span class="qbadge qbadge--q1">Q1</span>
-</article>
-<article class="pub">
-<div class="pub__idx">05</div>
-<div>
-<a class="pub__title" href="https://doi.org/10.1016/j.chemphys.2024.112566" rel="noopener" target="_blank" title="Open publication via DOI">Investigations for hydrogen storage applications of XPtH₃ (X = Cs, Fr) hydrides: a first-principles study</a>
-<div class="pub__authors">Abu Bakar, Hafiz Muhammad, Muhammad Ahmed, <span class="me">Muhammad Salman Kiani</span>, Abdul Quader, Sagidolla Batay, H. Elhosiny Ali</div>
-<div class="pub__journal"><em>Chemical Physics</em></div>
-</div>
-<span class="qbadge qbadge--q2">Q2</span>
-</article>
-</div>
-<!-- 2024 -->
-<div class="reveal">
-<div class="year-rule"><span class="y">2024</span><span class="line"></span><span class="c">1 article</span></div>
-<article class="pub">
-<div class="pub__idx">06</div>
-<div>
-<a class="pub__title" href="https://doi.org/10.1016/j.heliyon.2024.e39667" rel="noopener" target="_blank" title="Open publication via DOI">Elucidating the hysteresis effect in printed flexible perovskite solar cells with SnO₂ quantum-dot- and PCBM-based electron transport layers</a>
-<div class="pub__authors">Yerassyl Yerlanuly, Erik O. Shalenov, Hryhorii P. Parkhomenko, <span class="me">Muhammad Salman Kiani</span>, Zarina Kukhayeva, Annie Ng, Askhat N. Jumabekov</div>
-<div class="pub__journal"><em>Heliyon</em></div>
-</div>
-<span class="qbadge qbadge--q1">Q1</span>
-</article>
-</div>
-<!-- 2023 -->
-<div class="reveal">
-<div class="year-rule"><span class="y">2023</span><span class="line"></span><span class="c">4 articles</span></div>
-<article class="pub">
-<div class="pub__idx">07</div>
-<div>
-<a class="pub__title" href="https://doi.org/10.1021/acsomega.3c02341" rel="noopener" target="_blank" title="Open publication via DOI">Stepping toward portable optoelectronics with SnO₂ quantum-dot-based electron transport layers</a>
-<div class="pub__authors"><span class="me">Muhammad Salman Kiani</span>, Hryhorii P. Parkhomenko, Mayuribala Mangrulkar, Sabina Aigarayeva, Assylan Akhanuly, Erik O. Shalenov, Annie Ng, Askhat N. Jumabekov</div>
-<div class="pub__journal"><em>ACS Omega</em></div>
-</div>
-<span class="qbadge qbadge--q1">Q1</span>
-</article>
-<article class="pub">
-<div class="pub__idx">08</div>
-<div>
-<a class="pub__title" href="https://doi.org/10.1021/acsaom.3c00383" rel="noopener" target="_blank" title="Open publication via DOI">Self-powered printed flexible bifacial perovskite photodetector</a>
-<div class="pub__authors">Aidana Azamat, Hryhorii Parkhomenko, <span class="me">Muhammad Salman Kiani</span>, Annie Ng, Askhat Jumabekov</div>
-<div class="pub__journal"><em>ACS Applied Optical Materials</em></div>
-</div>
-<span class="qbadge qbadge--q2">Q2</span>
-</article>
-<article class="pub">
-<div class="pub__idx">09</div>
-<div>
-<a class="pub__title" href="https://doi.org/10.1016/j.ijleo.2023.171397" rel="noopener" target="_blank" title="Open publication via DOI">Comprehensive study of cesium–tantalum oxide for electronic, optical and thermoelectric properties under the effect of pressure for energy applications</a>
-<div class="pub__authors">Abu Bakar, <span class="me">Muhammad Salman Kiani</span>, Inaam Rasool, Abdul Quader, Mehran Ullah, Hussain J. Alathlawi, H. I. Elsaeedy, Muhammad Afzal</div>
-<div class="pub__journal"><em>Optik</em></div>
-</div>
-<span class="qbadge qbadge--na">—</span>
-</article>
-<article class="pub">
-<div class="pub__idx">10</div>
-<div>
-<a class="pub__title" href="https://doi.org/10.1039/D3RA02398B" rel="noopener" target="_blank" title="Open publication via DOI">Pressure-dependent physical properties of cesium–niobium oxide: a comprehensive study</a>
-<div class="pub__authors">Abu Bakar, <span class="me">Muhammad Salman Kiani</span>, Rab Nawaz, Abdul Wahab</div>
-<div class="pub__journal"><em>RSC Advances</em></div>
-</div>
-<span class="qbadge qbadge--q1">Q1</span>
-</article>
-</div>
-<!-- 2022 -->
-<div class="reveal">
-<div class="year-rule"><span class="y">2022</span><span class="line"></span><span class="c">2 articles</span></div>
-<article class="pub">
-<div class="pub__idx">11</div>
-<div>
-<a class="pub__title" href="https://doi.org/10.3390/nano12152615" rel="noopener" target="_blank" title="Open publication via DOI">Solution-processed SnO₂ quantum dots for the electron transport layer of flexible and printed perovskite solar cells</a>
-<div class="pub__authors"><span class="me">Muhammad Salman Kiani</span>, Zhandos T. Sadirkhanov, Alibek G. Kakimov, Hryhorii P. Parkhomenko, Annie Ng, Askhat N. Jumabekov</div>
-<div class="pub__journal"><em>Nanomaterials</em> · Top-10 paper of 2022</div>
-</div>
-<span class="qbadge qbadge--q1">Q1</span>
-</article>
-<article class="pub">
-<div class="pub__idx">12</div>
-<div>
-<a class="pub__title" href="https://doi.org/10.1016/j.jmrt.2022.04.111" rel="noopener" target="_blank" title="Open publication via DOI">First-principles calculations to investigate elasto-mechanical and opto-electronic properties of pyrochlore oxides X₂Zr₂O₇ (X = La, Nd)</a>
-<div class="pub__authors">Ali Raza, A. Afaq, <span class="me">M. Salman Kiani</span>, Maqsood Ahmed, Abu Bakar, Muhammad Asif</div>
-<div class="pub__journal"><em>Journal of Materials Research and Technology</em></div>
-</div>
-<span class="qbadge qbadge--q1">Q1</span>
-</article>
-</div>
-<!-- 2020 -->
-<div class="reveal">
-<div class="year-rule"><span class="y">2020</span><span class="line"></span><span class="c">1 article</span></div>
-<article class="pub">
-<div class="pub__idx">13</div>
-<div>
-<a class="pub__title" href="https://doi.org/10.1016/j.matchemphys.2020.122756" rel="noopener" target="_blank" title="Open publication via DOI">Spin-polarized exciton formation in Co-doped GaN nanowires</a>
-<div class="pub__authors">Muhammad Umair Farooq, Shahid Atiq, Muhammad Zahir, <span class="me">Muhammad Salman Kiani</span>, Shahid M. Ramay, Bingsuo Zou, Jun Zhang</div>
-<div class="pub__journal"><em>Materials Chemistry and Physics</em></div>
-</div>
-<span class="qbadge qbadge--q1">Q1</span>
-</article>
-</div>
-<!-- 2019 -->
-<div class="reveal">
-<div class="year-rule"><span class="y">2019</span><span class="line"></span><span class="c">1 article</span></div>
-<article class="pub">
-<div class="pub__idx">14</div>
-<div>
-<a class="pub__title" href="https://doi.org/10.1016/j.spmi.2019.106159" rel="noopener" target="_blank" title="Open publication via DOI">The contribution of Cr(III)-doping on the modulation of magnetic and luminescence properties of GaN nanowires</a>
-<div class="pub__authors">Muhammad Umair Farooq, Bingsuo Zou, Abdul Ghaffar, <span class="me">Muhammad Salman Kiani</span>, Shahid Atiq, Shazia Bashir, Shahzad Naseem</div>
-<div class="pub__journal"><em>Superlattices and Microstructures</em></div>
-</div>
-<span class="qbadge qbadge--q2">Q2</span>
-</article>
-</div>
-</div>
-</section>
-<!-- ══════════════ EDUCATION + EXPERIENCE ══════════════ -->
-<section class="band-paper" id="experience">
-<div class="wrap">
-<div class="sec-head reveal">
-<span class="eyebrow">The path</span>
-<h2>Education &amp; experience</h2>
-</div>
-<div class="two-col">
-<!-- EDUCATION -->
-<div class="reveal">
-<div class="col-title">Education</div>
-<div class="tl">
-<div class="tl__item">
-<div class="tl__when">Oct 2020 — Sep 2024</div>
-<div class="tl__what">Ph.D. Physics</div>
-<div class="tl__where">Nazarbayev University, Astana, Kazakhstan</div>
-<div class="tl__note">Solution-processed SnO₂ electron transport layers for flexible printed perovskite solar cells</div>
-</div>
-<div class="tl__item">
-<div class="tl__when">Oct 2016 — Oct 2018</div>
-<div class="tl__what">M.S. Nanotechnology</div>
-<div class="tl__where">Centre of Excellence in Solid State Physics, University of the Punjab, Lahore</div>
-<div class="tl__note">PVP-coated Mn-ferrite nanoparticles as a carrier for targeted drug delivery</div>
-<span class="tl__badge">Gold Medal</span>
-</div>
-</div>
-</div>
-<!-- EXPERIENCE -->
-<div class="reveal">
-<div class="col-title">Appointments</div>
-<div class="tl">
-<div class="tl__item is-now">
-<div class="tl__when">Jan 2025 — present</div>
-<div class="tl__what">Senior Lecturer</div>
-<div class="tl__where">Heriot-Watt University, Aktobe Campus, Kazakhstan</div>
-</div>
-<div class="tl__item">
-<div class="tl__when">Sep 2024 — Dec 2024</div>
-<div class="tl__what">Postdoctoral Researcher</div>
-<div class="tl__where">Nazarbayev University, Astana</div>
-</div>
-<div class="tl__item">
-<div class="tl__when">Jun 2021 — Aug 2024</div>
-<div class="tl__what">Research Assistant</div>
-<div class="tl__where">Nazarbayev University, Astana</div>
-</div>
-<div class="tl__item">
-<div class="tl__when">Sep 2020 — May 2021</div>
-<div class="tl__what">Graduate Teaching Assistant</div>
-<div class="tl__where">Nazarbayev University, Astana</div>
-</div>
-<div class="tl__item">
-<div class="tl__when">2018 — 2020</div>
-<div class="tl__what">Lecturer in Physics</div>
-<div class="tl__where">Govt. Graduate College, Jhelum, Pakistan</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ══════════════ SKILLS ══════════════ -->
-<section id="skills">
-<div class="wrap">
-<div class="sec-head reveal">
-<span class="eyebrow">Toolkit</span>
-<h2>Expertise &amp; techniques</h2>
-<p>A full-stack materials scientist — I can build a device, measure it, and model it.</p>
-</div>
-<div class="skill-grid">
-<article class="skill skill--fab reveal">
-<div class="skill__ic"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><path d="M4 20h16M6 20V9l6-4 6 4v11M9 20v-5h6v5" stroke="#9a6b00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></svg></div>
-<h3>Device fabrication</h3>
-<div class="skill__list">
-<span class="chip">Slot-die coating</span>
-<span class="chip">Spin coating</span>
-<span class="chip">Magnetron sputtering</span>
-</div>
-</article>
-<article class="skill skill--char reveal">
-<div class="skill__ic"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><path d="M3 17l5-6 4 3 5-8 4 5" stroke="#128276" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path><path d="M3 21h18" stroke="#128276" stroke-linecap="round" stroke-width="1.7"></path></svg></div>
-<h3>Characterisation</h3>
-<div class="skill__list">
-<span class="chip">XRD</span><span class="chip">SEM</span><span class="chip">TEM</span><span class="chip">AFM</span><span class="chip">KPFM</span>
-<span class="chip">UV-Vis</span><span class="chip">FTIR</span><span class="chip">PL</span><span class="chip">XPS</span>
-<span class="chip">J–V</span><span class="chip">EQE</span><span class="chip">EIS</span><span class="chip">OCVD</span><span class="chip">Van der Pauw</span>
-</div>
-</article>
-<article class="skill skill--comp reveal">
-<div class="skill__ic"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="2.2" stroke="#5b4bd6" stroke-width="1.7"></circle><path d="M12 3v3M12 18v3M3 12h3M18 12h3M6 6l2 2M16 16l2 2M18 6l-2 2M8 16l-2 2" stroke="#5b4bd6" stroke-linecap="round" stroke-width="1.7"></path></svg></div>
-<h3>Computation &amp; theory</h3>
-<div class="skill__list">
-<span class="chip">Density Functional Theory</span>
-<span class="chip">Quantum ESPRESSO</span>
-<span class="chip">WIEN2k</span>
-</div>
-</article>
-</div>
-<!-- awards -->
-<div class="reveal" style="margin-top:4rem">
-<div class="col-title">Honours &amp; awards</div>
-<div class="awards">
-<div class="award">
-<div class="award__mk">★</div>
-<div><div class="award__t">Top-10 best-performing paper in <em>Nanomaterials</em></div><div class="award__s">Journal-wide recognition · 2022</div></div>
-</div>
-<div class="award">
-<div class="award__mk">◆</div>
-<div><div class="award__t">Gold Medal — M.S. Nanotechnology</div><div class="award__s">University of the Punjab</div></div>
-</div>
-<div class="award">
-<div class="award__mk">①</div>
-<div><div class="award__t">1st place, poster presentation — INESS 2022</div><div class="award__s">10th Int. Conf. on Nanomaterials &amp; Advanced Energy Storage Systems, Nazarbayev University</div></div>
-</div>
-<div class="award">
-<div class="award__mk">①</div>
-<div><div class="award__t">1st place, poster presentation — ICSSP'17</div><div class="award__s">Int. Conf. in Solid State Physics, University of the Punjab, Lahore</div></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ══════════════ CONTACT ══════════════ -->
-<section class="contact" id="contact">
-<div class="wrap">
-<div class="contact__grid">
-<div>
-<span class="eyebrow">Get in touch</span>
-<div class="sec-head" style="margin-bottom:1rem">
-<h2>Open to collaboration &amp; research partnerships</h2>
-<p style="color:#c9ccd3">Perovskite photovoltaics, computational materials discovery, and everything in between. Based in Aktobe, Kazakhstan.</p>
-</div>
-<div class="cbtns">
-<a class="cbtn cbtn--solid" href="mailto:m.salmankiani93@gmail.com">
-<svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><rect height="14" rx="2" stroke="currentColor" stroke-width="1.8" width="18" x="3" y="5"></rect><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>
-            m.salmankiani93@gmail.com
-          </a>
-<a class="cbtn cbtn--ghost" href="https://orcid.org/0000-0003-1474-6308" rel="noopener" target="_blank">
-<svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="11" stroke="currentColor" stroke-width="1.6"></circle><path d="M8.3 8.3a.85.85 0 1 0 0-1.7.85.85 0 0 0 0 1.7zm-.6 1.4h1.2v7.6H7.7V9.7zm2.6 0h2.9c2.5 0 3.6 1.8 3.6 3.8s-1.4 3.8-3.6 3.8h-2.9V9.7zm1.2 1.1v5.4h1.6c1.9 0 2.4-1.4 2.4-2.7 0-1.5-.8-2.7-2.5-2.7h-1.5z" fill="currentColor"></path></svg>
-            ORCID profile
-          </a>
-</div>
-</div>
-<div class="refs">
-<h4>Academic references</h4>
-<div class="ref">
-<div class="ref__n">Dr. Abdul Rehman Malik</div>
-<div class="ref__d">Professor, Chemical &amp; Materials Engineering<br/>New Uzbekistan University, Tashkent</div>
-</div>
-<div class="ref">
-<div class="ref__n">Dr. Abdul Wahab</div>
-<div class="ref__d">Associate Professor, Mathematics<br/>Sultan Qaboos University, Oman</div>
-</div>
-<div class="ref">
-<div class="ref__n">Dr. Marat Kaikanov</div>
-<div class="ref__d">Assistant Professor, Physics<br/>Nazarbayev University, Astana</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<footer>
-<div class="wrap foot">
-<span>© <span id="yr"></span> Muhammad Salman Kiani</span>
-<span>Materials Physics · Photovoltaics · DFT</span>
-</div>
-</footer>
-<script>
-  document.getElementById('yr').textContent = new Date().getFullYear();
-
-  // scroll reveal
-  const io = new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
-  },{threshold:.12, rootMargin:'0px 0px -40px 0px'});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-</script>
-</body>
-</html>
+### Form Fields & Contact Callouts
+- **Inputs:** Crisp white canvas, `1px solid #CBD5E1` border, `0.25rem` radius. Focus shifts border to `#1C2541` with a `2px` subtle ambient ring in `#1C2541` at 10% opacity.
+- **Contact Panel:** Framed callout box using `#0B132B` deep background with `#FFFFFF` Newsreader typography and `#D97706` email/institutional links, providing an authoritative closure to the portfolio.
